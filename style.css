@@ -134,7 +134,7 @@ img {
   justify-content: center;
 } */
 
-.ntent h1 {
+.text-content h1 {
   font-size: 90px;
   font-weight: 600;
   color: #ffffff;
@@ -486,7 +486,7 @@ p {
 }
 
 /* Arrow Connector */
-.function-card > div::after {
+/* .function-card > div::after {
   content: "";
   position: absolute;
   top: 24px;
@@ -495,7 +495,7 @@ p {
   height: 2px;
   border-top: 2px dashed white;
   z-index: 1;
-}
+} */
 
 /* Remove arrow on last card */
 .function-card > div:last-child::after {
