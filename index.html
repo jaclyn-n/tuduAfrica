@@ -23,12 +23,14 @@
   <body>
     <!-- navbar -->
     <nav class="navbar" id="navbar">
-      <div class="logo">Tudu</div>
+      <div>
+        <a href="#home"><img src="./assets/logo.png" alt="tudu" /></a>
+      </div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#function">Services</a></li>
+        <li><a href="#socials">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">&#9776;</div>
       <div class="nav-button">
@@ -41,7 +43,7 @@
     </nav>
 
     <!--hero /solution &service -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="overlay"></div>
       <div>
         <div class="hero-content">
@@ -74,7 +76,7 @@
     <!-- Stats Section -->
 
     <!-- features -->
-    <section>
+    <section id="features">
       <div class="wwa-services">
         <div class="wwa">
           <h3>Who we are</h3>
@@ -160,7 +162,7 @@
     </section> -->
 
     <!-- how it works -->
-    <div class="function">
+    <div class="function" id="function">
       <div class="function-head">
         <p>What's the function</p>
         <h3>Let’s see how it works</h3>
@@ -201,6 +203,11 @@
     <!-- testimonials -->
 
     <div class="review-cont">
+      <div class="testimonial-header">
+       <p>TESTIMONIALS</p>
+       <h3>Reviews from our Users</h3>
+      </div>
+
       <div class="reviews">
         <div id="owl-demo" class="owl-carousel owl-theme">
           <div class="item">
@@ -324,9 +331,9 @@
         <div class="download">
           <div><i class="fa-solid fa-shield-halved"></i> Secure</div>
           <div><i class="fa-solid fa-earth-africa"></i> Wide Reach</div>
-          <div><i class="ri-hand-heart-line"></i> Easy to use</div>
+          <div><i class="fas fa-face-smile"></i> Easy to use</div>
           <div><i class="fa-solid fa-arrows-rotate"></i> Exciting Updates</div>
-          <div><i class="ri-money-dollar-circle-line"></i> Free!</div>
+          <div><i class="fas fa-tag"></i> Free!</div>
         </div>
       </div>
 
@@ -368,14 +375,29 @@
     </section> -->
 
     <!-- footer -->
-    <section class="footer">
-      <div>logo</div>
-      <div>
-        <p>Let’s Connect</p>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <section class="footer" id="socials">
+      <!-- Inner container with shorter border-top -->
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span><img src="./assets/logo.png" alt="tudu" /></span>
+        </div>
       </div>
+
+      <!-- Socials and Links -->
+      <div class="footer-bottom">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <div class="navigate">
+          <a href="#home">Home</a>
+          <a href="#">Advertise</a>
+          <a href="#socials">Contact</a>
+        </div>
+      </div>
+
       <h4>©Tudu Africa 2025</h4>
     </section>
 
