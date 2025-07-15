@@ -958,7 +958,7 @@ p {
     width: 90%;
     padding: 40px 25px;
     z-index: 1;
-    margin-top: 50px; /* space for image to sit above */
+    margin-top: 50px; 
     margin-bottom: 30px;
     margin-right: 130px;
     background-size: cover;
@@ -976,6 +976,25 @@ p {
     z-index: 2;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+  }
+    .about-section {
+    flex-direction: column;
+  }
+
+  .about-card {
+    order: 1;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-image {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
   }
   .about-right img {
     width: 100%;
@@ -1274,36 +1293,60 @@ p {
   transform: translate(-50%, 10%);
 }
 @media (max-width: 768px) {
-  .download div {
-    font-size: 10px;
-    max-width: 120px;
-    padding: 4px 8px;
-    overflow: hidden;
+  .download-image {
+    order: 1;
+    position: relative; /* important to keep positioning context */
   }
 
-  .download div:nth-child(1),
-  .download div:nth-child(2),
-  .download div:nth-child(3),
-  .download div:nth-child(4),
-  .download div:nth-child(5) {
-    position: absolute;
-    transform: none;
-    margin: 5px;
+  .download-text {
+    order: 2;
   }
 
   .download {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .download-text {
-    order: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
   }
 
-  .download-image {
-    order: 2;
+  .download div {
+    font-size: 10px;
+    max-width: 100px;
+    padding: 4px 6px;
+    transform: none;
+    position: absolute;
+  }
+
+  /* Adjust floating card positions for small screens */
+  .download div:nth-child(1) {
+    top: 5%;
+    left: 5%;
+  }
+
+  .download div:nth-child(2) {
+    top: 5%;
+    right: 5%;
+  }
+
+  .download div:nth-child(3) {
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .download div:nth-child(4) {
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .download div:nth-child(5) {
+    bottom: 5%;
+    left: 30%;
   }
 }
+
 /* 
 .footer {
   padding: 30px 20px;
