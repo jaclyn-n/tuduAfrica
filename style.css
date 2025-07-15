@@ -248,6 +248,10 @@ img {
   flex-direction: row;
   gap: 30px;
   margin-top: 40px;
+
+}
+.hero-buttons a {
+  text-decoration: none;
 }
 
 .hero-buttons button {
@@ -269,6 +273,7 @@ img {
   justify-content: center;
   gap: 3px;
   line-height: 20px;
+  margin-top: auto;
 }
 .down i {
   font-size: 25px;
@@ -327,6 +332,45 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.trailer-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.trailer-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  margin: 100px auto;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trailer-modal-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
 @media screen and (max-width: 768px) {
   .hero-section {
     padding: 40px 20px;
@@ -908,11 +952,13 @@ p {
     padding: 40px 20px;
   }
 
+  .about-left,
   .about-right {
-    position: static;
     width: 100%;
-    transform: none;
-    margin-top: 30px;
+  }
+
+  .about-right {
+    margin-top: 20px;
   }
 
   .section-title {
@@ -995,14 +1041,21 @@ p {
 }
 /* New testimonial card styling */
 .testimonial-box {
-  background-color: #005fe3a2; /* light tan/brown */
+  background-color: #005fe3a2;
   padding: 30px 25px;
   border-radius: 15px;
-  text-align: center;
   width: 300px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 300px;
   color: white;
   font-family: "Poppins", sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* NEW FLEX SETTINGS */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-img {
@@ -1021,7 +1074,7 @@ p {
 }
 
 .testimonial-stars {
-  color: #fff;
+  color: gold;
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -1031,15 +1084,19 @@ p {
   line-height: 1.5;
   color: #fff;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .testimonial-name {
-  font-family: "Dancing Script", cursive; /* or any script font you choose */
+  font-family: "Dancing Script", cursive;
   font-size: 16px;
   color: #fff;
   font-weight: 600;
-}
+  text-align: center;
 
+  /* PUSH TO BOTTOM */
+  margin-top: auto;
+}
 .owl-theme .owl-controls {
   margin-top: 150px;
   margin-left: 30px;
@@ -1053,7 +1110,7 @@ p {
   display: inline-block;
   height: 10px !important;
   width: 10px !important;
-  background-color: #ececec !important;
+  background-color: #005fe3a2 !important;
   opacity: 0.8;
   border-radius: 50%;
   margin: 0 5px;

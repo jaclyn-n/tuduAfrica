@@ -29,7 +29,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#function">Services</a></li>
+        <li><a href="#about-us">About us</a></li>
         <li><a href="#socials">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">&#9776;</div>
@@ -37,13 +37,14 @@
         <a
           href="https://play.google.com/store/apps/details?id=africa.tudu.tudu"
           target="_blank"
-        ></a>
-        <button>Get Started</button>
+        >
+          <button>Download Now</button>
+        </a>
       </div>
     </nav>
 
     <!--hero /solution &service -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
       <div class="hero">
         <div class="hero-text">
           <div class="stars">
@@ -65,13 +66,37 @@
             </p>
           </div>
           <div class="hero-buttons">
-            <button class="down">
-              <i class="fa-brands fa-apple"></i> Download Now
-            </button>
-            <button class="trail">
-              <i class="fa-solid fa-play"></i> Watch Trailer
-            </button>
+            <a
+              href="https://play.google.com/store/apps/details?id=africa.tudu.tudu"
+              target="_blank"
+            >
+              <button class="down">
+                <i class="fa-brands fa-apple"></i> Download Now
+              </button>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=L2Eb2DlpvcM&t=3s" target="_blank">
+              <button class="trail">
+                <i class="fa-solid fa-play"></i> Watch Trailer
+              </button></a
+            >
           </div>
+          <!-- <div id="watchTrailerBtn" class="trailer-modal">
+            <div class="trailer-modal-content">
+              <span class="close-btn">&times;</span>
+              <iframe
+                id="trailerVideo"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/L2Eb2DlpvcM"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div> -->
+
           <div class="hero-stats">
             <div class="hero-s-box">
               <h3>2k <span>+</span></h3>
@@ -94,7 +119,7 @@
       </div>
     </section>
 
-    <section class="feat-section">
+    <section id="features" class="feat-section">
       <div class="feat-text">
         <p>Quality Features</p>
         <h3>Why choose Tudu?</h3>
@@ -256,7 +281,7 @@
     </div>
 
     <!-- About us -->
-    <section class="about-wrapper">
+    <section id="about-us" class="about-wrapper">
       <div class="about-left">
         <h4 class="section-subtitle">ABOUT US</h4>
         <h2 class="section-title">WHO WE ARE</h2>
@@ -285,7 +310,7 @@
 
     <!-- testimonials -->
 
-    <div class="review-cont">
+    <div id="testy" class="review-cont">
       <div class="testimonial-header">
         <p>TESTIMONIALS</p>
         <h3>Reviews from our Users</h3>
@@ -332,10 +357,10 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                I love how it reduces the numerous calls I make with customers
+                just to receive an order.
               </p>
-              <p class="testimonial-name">– Grace</p>
+              <p class="testimonial-name">– Constance Mensah</p>
             </div>
           </div>
 
@@ -355,10 +380,10 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                One of the best online shopping apps in Ghana. Very secure and
+                quality items.
               </p>
-              <p class="testimonial-name">– Grace</p>
+              <p class="testimonial-name">– Elizabeth Ekpaha-Kwofie</p>
             </div>
           </div>
 
@@ -378,10 +403,10 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                User-friendly Very cool and easy user interface to use. I really
+                love it!.
               </p>
-              <p class="testimonial-name">– Grace</p>
+              <p class="testimonial-name">– Theophilus Deiteh</p>
             </div>
           </div>
 
@@ -401,10 +426,10 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                Modern look & trending design, Tudu is a great app there. I will
+                recommend it to anyone who like online shopping.
               </p>
-              <p class="testimonial-name">– Grace</p>
+              <p class="testimonial-name">– Emmanuel Oti-Ompong</p>
             </div>
           </div>
         </div>
@@ -465,55 +490,7 @@
       </div>
     </section>
 
-    <!-- <section class="download-now-video container">
-      <video autoplay muted loop playsinline class="background-video">
-        <source
-          src="./assets/Introducing Tudu Online Shopping.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
-      <div class="video-overlay"></div>
-
-      <div class="video-content">
-        <h2>Download the Tudu App</h2>
-        <p>
-          Watch how it works in action and experience the convenience of selling
-          and buying on Tudu.
-        </p>
-        <a href="#" class="cta-button">Download Now</a>
-      </div>
-    </section> -->
-
-    <!-- footer -->
-    <!-- <section class="footer" id="socials"> 
-      
-      <div class="footer-inner">
-        <div class="footer-logo">
-          <span><img src="./assets/logo.png" alt="tudu" /></span>
-        </div>
-      </div>
-
-      
-      <div class="footer-bottom">
-        <div class="socials">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-
-        <div class="navigate">
-          <a href="#home">Home</a>
-          <a href="#">Advertise</a>
-          <a href="#socials">Contact</a>
-        </div>
-      </div>
-
-      <h4>©Tudu Africa 2025</h4>
-    </section> -->
-
-    <section class="footer-section">
+    <section id="socials" class="footer-section">
       <div class="social-link">
         <a href="https://www.linkedin.com/company/tuduafrica/"
           ><i class="fa-brands fa-linkedin"></i
@@ -535,8 +512,8 @@
       <div class="border-bott"></div>
       <div class="foota-nav">
         <a href="#home">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Testimonials</a>
+        <a href="#about-us">About Us</a>
+        <a href="#testy">Testimonials</a>
       </div>
       <div class="foota-text">
         <p>
