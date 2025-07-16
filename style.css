@@ -372,8 +372,9 @@ img {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    padding: 40px 20px;
+    padding: 50px 20px 0px 20px;
     text-align: center;
+   
   }
 
   .hero {
@@ -419,7 +420,7 @@ img {
   .hero-s-box h3 {
     font-size: 20px;
   }
-
+  
   .hero-image {
     flex: unset;
     max-width: 100%;
@@ -894,7 +895,7 @@ p {
 
 .service-card {
   background: rgba(31, 31, 31, 0.08);
-  border-left: 1px solid #ffffff;
+  border-left: 2px solid #ffffff;
   padding: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -956,23 +957,23 @@ p {
   .about-left {
     position: relative;
     width: 90%;
-    padding: 40px 25px;
+    padding: 30px 25px;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 130px;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    min-height: 280px;
+    min-height: 50px;
   }
   .about-right {
-    position: absolute;
-    top: 20px;
-    right: 10%;
+    position: relative;
+    bottom: 50%;
+    left: 5%;
     transform: translateY(0);
     width: 80%;
-    max-width: 250px;
+    max-width: 500px;
     z-index: 2;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
