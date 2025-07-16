@@ -958,7 +958,7 @@ p {
     width: 90%;
     padding: 40px 25px;
     z-index: 1;
-    margin-top: 50px; 
+    margin-top: 50px;
     margin-bottom: 30px;
     margin-right: 130px;
     background-size: cover;
@@ -977,7 +977,7 @@ p {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
-    .about-section {
+  .about-section {
     flex-direction: column;
   }
 
@@ -1237,23 +1237,23 @@ p {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 2;
+  z-index: 10;
 }
 
 .download div {
   position: absolute;
   background: white;
-  padding: 6px 10px; /* smaller padding */
-  border-radius: 8px; /* slightly smaller corners */
+  padding: 6px 10px;
+  border-radius: 8px; 
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  font-size: 12px; /* smaller text */
+  font-size: 12px; 
   display: flex;
   align-items: center;
-  gap: 6px; /* smaller gap between icon and text */
+  gap: 6px; 
   font-weight: 500;
-  z-index: 5;
+  z-index: 20;
   pointer-events: auto;
-  max-width: 140px; /* optional: set a max width */
+  max-width: 140px; 
 }
 
 /* Icons style */
@@ -1320,7 +1320,7 @@ p {
     position: absolute;
   }
 
-  /* Adjust floating card positions for small screens */
+  
   .download div:nth-child(1) {
     top: 20%;
     left: 5%;
@@ -1337,7 +1337,7 @@ p {
   }
 
   .download div:nth-child(4) {
-    bottom: 45%;
+    bottom: 40%;
     right: 5%;
   }
 
