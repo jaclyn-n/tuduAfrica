@@ -374,7 +374,6 @@ img {
   .hero-section {
     padding: 50px 20px 0px 20px;
     text-align: center;
-   
   }
 
   .hero {
@@ -420,7 +419,7 @@ img {
   .hero-s-box h3 {
     font-size: 20px;
   }
-  
+
   .hero-image {
     flex: unset;
     max-width: 100%;
@@ -569,6 +568,10 @@ img {
 
   .nav-links.show {
     display: flex;
+  }
+  .nav-button button {
+    padding: 8px 10px;
+    font-size: 13px;
   }
 
   .hamburger {
@@ -1238,7 +1241,7 @@ p {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 10;
+  z-index: 5;
 }
 
 .download div {
@@ -1252,7 +1255,7 @@ p {
   align-items: center;
   gap: 6px;
   font-weight: 500;
-  z-index: 20;
+  z-index: 6;
   pointer-events: auto;
   max-width: 140px;
 }
@@ -1295,12 +1298,12 @@ p {
 }
 @media (max-width: 768px) {
   .download-image {
-    order: 1;
+    order: 2;
     position: relative;
   }
 
   .download-text {
-    order: 2;
+    order: 1;
   }
 
   .download div:nth-child(1) {
